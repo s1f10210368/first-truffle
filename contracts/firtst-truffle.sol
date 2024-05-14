@@ -1,5 +1,6 @@
 pragma solidity ^0.8.21;
-import "openzeppelin-solidity/contracts/token/ERC20/ERC20.sol";
+import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
+
  
 contract TrufflePRJ is ERC20{
    string public name = "TrufflePRJ";
