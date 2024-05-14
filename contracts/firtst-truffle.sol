@@ -1,13 +1,12 @@
+// SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
+
 import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 
- 
-contract TrufflePRJ is ERC20{
-   string public name = "TrufflePRJ";
-   string public symbol = "TRFPJ";
-   uint256 public decimals = 18;
- 
-constructor(uint256 initialSupply) public {
-   _mint(msg.sender, initialSupply);
-   }
+contract TrufflePRJ is ERC20 {
+    constructor(uint256 initialSupply) ERC20("TrufflePRJ", "TRFPJ") {
+        _mint(msg.sender, initialSupply);
+    }
+
+    // No need to override name, symbol, and decimals as they are already handled by ERC20
 }
