@@ -1,3 +1,5 @@
+window.ethereum.enable();
+
 window.addEventListener('load', async () => {
     if (window.ethereum) {
       window.web3 = new Web3(ethereum);
